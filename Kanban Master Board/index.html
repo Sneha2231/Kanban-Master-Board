@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Master Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="kanban-app">
+    <aside class="sidebar">
+      <h2>🧩 KanbanMaster</h2>
+      <ul id="boardList">
+        <li class="active">Platform Launch</li>
+        <li>Marketing Plan</li>
+        <li>Roadmap</li>
+      </ul>
+      <button id="addBoardBtn">+ New Board</button>
+    </aside>
+
+    <main class="main-board">
+      <header>
+        <h3 id="boardTitle">Platform Launch</h3>
+      </header>
+      <div class="columns">
+        <div class="column" data-status="todo">
+          <h4>To Do</h4>
+          <div class="task-list" id="todo"></div>
+          <button class="add-task" onclick="addTask('todo')">+ Add Task</button>
+        </div>
+        <div class="column" data-status="doing">
+          <h4>In Progress</h4>
+          <div class="task-list" id="doing"></div>
+          <button class="add-task" onclick="addTask('doing')">+ Add Task</button>
+        </div>
+        <div class="column" data-status="done">
+          <h4>Completed</h4>
+          <div class="task-list" id="done"></div>
+          <button class="add-task" onclick="addTask('done')">+ Add Task</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to right, #e8f0ff, #f5f8ff);
+    color: #333;
+}
+
+.kanban-app {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #002b5b;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background-color: #0052cc;
+}
+
+#addBoardBtn {
+    background-color: #00c896;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-board {
+    flex: 1;
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.main-board header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.columns {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.column {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.column h4 {
+    margin-bottom: 1rem;
+}
+
+.task-list {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.task {
+    background-color: #f1f3f5;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.add-task {
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.add-task:hover {
+    background-color: #003d99;
+}
